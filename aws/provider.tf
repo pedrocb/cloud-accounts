@@ -3,6 +3,7 @@ provider "aws" {
   allowed_account_ids = ["477988886247"]
   profile = "root-account"
 }
+
 provider "aws" {
   profile = "root-account"
   region = "eu-west-1"

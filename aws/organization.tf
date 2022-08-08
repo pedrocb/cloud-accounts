@@ -3,8 +3,7 @@ resource "aws_organizations_organization" "org" {}
 resource "aws_organizations_account" "this" {
   for_each = var.accounts
   name = each.key
-  email = "${each.key}+pbelem1995@gmail.com"
-
+  email = "pbelem1995+${each.key}@gmail.com"
 }
 
 module "movie-releases_state_backend" {
